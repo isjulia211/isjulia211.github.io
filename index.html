@@ -11,13 +11,11 @@
     />
 
     <!-- font family -->
+    <!-- navigation -->
     <link
-      href="https://fonts.googleapis.com/css?family=Corben"
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nobile"
-      rel="stylesheet"
+      type="text/css"
     />
 
     <!-- Boxicons -->
@@ -33,34 +31,37 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <nav class="nav container flex">
-        <a href="/index.html" class="logo-content flex">
+      <div class="header-nav">
+        <a href="/index.html" class="nav-logo">
           <img class="logo-icon" src="images/logo.png" alt="DGL logo" />
         </a>
 
-        <div class="menu-content">
-          <ul class="menu-list flex">
-            <li>
-              <a href="/index.html" class="nav-link active-navlink">home</a>
+        <nav class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link nav-active">Home</a>
             </li>
-            <li>
-              <a href="/about.html" class="nav-link">about</a>
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">About Us</a>
             </li>
-            <li><a href="/services.html" class="nav-link">services</a></li>
-            <li><a href="/news.html" class="nav-link">news</a></li>
-            <li><a href="/contact.html" class="nav-link">contact</a></li>
+            <li class="nav-item">
+              <a href="/services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact</a>
+            </li>
           </ul>
+        </nav>
+        <!-- menu-btn header-burger -->
+        <div class="header-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-
-        <div class="contact-content flex">
-          <i class="bx bx-phone phone-icon"></i>
-          <span class="phone-number">0022-0303-2030</span>
-        </div>
-      </nav>
+      </div>
     </header>
     <!-- homepage main -->
     <main>
