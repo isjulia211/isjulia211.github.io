@@ -1053,17 +1053,17 @@ footer {
 }
 @media screen and (min-width: 1440px) {
   .focus-card {
-    height: 60vh;
+    height: 40vh;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .focus-card {
-    height: 80vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 1023px) {
   .focus-card {
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media screen and (max-width: 424px) {
