@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <!-- font family -->
+    <!-- navigation -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&family=Gothic+A1:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="css/typo.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/info.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-nav">
+        <a href="/index.html" class="nav-logo">
+          <img class="logo-icon" src="images/logo.png" alt="DGL logo" />
+        </a>
+
+        <nav class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/services.html" class="nav-link nav-active">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu-btn header-burger -->
+        <div class="header-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner section -->
+    <section class="innerpage-banner"></section>
+    <!-- /banner section -->
+
+    <!-- contact section -->
+    <section class="contact-us">
+      <h3 class="text-center">Contact Us</h3>
+      <p class="text-center">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 contact-us-w3ls">
+            <div class="contact-info">
+              <a href="mailto:email@example.com">
+                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                email@example.com
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 contact-us-w3ls">
+            <div class="contact-info">
+              <p class="contact-us-p1">
+                <span
+                  class="fa fa-volume-control-phone"
+                  aria-hidden="true"
+                ></span
+                >+01010101010101
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 contact-us-w3ls">
+            <div class="contact-info">
+              <p class="contact-us-p1">
+                <span class="fa fa-map-marker" aria-hidden="true"></span>Rue
+                Bourbon 113 Paris
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact section -->
+    <!-- Contact-Starts-Here -->
+    <section class="contact">
+      <div class="section-title">
+        <h2>Contact us</h2>
+      </div>
+
+      <form class="contact_form">
+        <div class="message">
+          <div class="contact-content" id="left">
+            <input
+              type="text"
+              class="text"
+              value="Name"
+              placeholder="Name"
+              onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = 'Name';}"
+            />
+            <input
+              type="text"
+              class="text"
+              value="Email"
+              placeholder="Email"
+              onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = 'Email';}"
+            />
+            <input
+              type="text"
+              class="text"
+              value="Phone"
+              placeholder="Phone"
+              onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = 'Phone';}"
+            />
+          </div>
+
+          <div class="contact-content" id="right">
+            <textarea
+              placeholder="Message"
+              onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = 'Message';}"
+            >
+                  Message</textarea
+            >
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <input type="submit" class="form_btn" value="Send Message" />
+      </form>
+    </section>
+    <!-- //Contact-Ends-Here -->
+    <footer>
+      <section>
+        <div class="footer-info">
+          <div class="footer-list">
+            <h4>QUICK LINKS</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-list" id="footer-services">
+            <h4>SERVICES</h4>
+            <ul>
+              <li>Warehousing</li>
+              <li>Sea-Freight Services</li>
+              <li>Air-Freight Services</li>
+              <li>Customs Clearance Services</li>
+              <li>Transport Logistics Services</li>
+            </ul>
+          </div>
+          <div class="footer-list" id="footer-address">
+            <h4>ADDRESS</h4>
+            <address>
+              <ul>
+                <li>Head Office(Sydney)</li>
+                <li>Level 1 Suite 2</li>
+                <li>80 George Street</li>
+                <li>NSW 2150 Australia</li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-list" id="footer-contact">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>Nike</li>
+              <li>Telephone : +61 2 9615 4750</li>
+              <li>
+                Email :
+                <a class="mail" href="mailto:mail@example.com"
+                  >info@working.com</a
+                >
+              </li>
+              <li><img src="images/contact-scan.png" alt="" /></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="social-icons">
+          <i class="bx bxl-linkedin-square"></i>
+          <i class="bx bxl-facebook-square"></i>
+          <i class="bx bxl-instagram-alt"></i>
+          <i class="bx bxl-whatsapp-square"></i>
+          <i class="bx bxs-envelope"></i>
+        </div>
+
+        <div class="copyright slideanim">
+          <p>Copyright &copy; 2023.DLF Global Logistics</p>
+        </div>
+      </section>
+
+      <!-- //Footer-Ends-Here -->
+    </footer>
+    <!-- script -->
+    <script src="js/script-index.js"></script>
+  </body>
+</html>
