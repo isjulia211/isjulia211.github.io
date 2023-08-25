@@ -1309,6 +1309,7 @@ form.contact_form {
 .half-link:hover .half-arrowIcon {
   margin-left: 4px;
 }
+
 /*  */
 section.service-agile {
   padding: 80px 0;
@@ -1404,8 +1405,8 @@ h2.page-header.text-center {
 /*-- /inner pages styling --*/
 /*-- about page --*/
 .innerpage-intro {
-  margin-top: 5rem;
-  padding: 50px 0 70px;
+  margin-top: 30vh;
+  padding: 0;
   text-align: center;
 }
 .innerpage-intro h1 {
@@ -1601,8 +1602,39 @@ section.contact-us ul.social-icons li a i.fa:hover {
   -o-animation: spin 2s linear infinite;
   -ms-animation: spin 2s linear infinite;
 }
-.number-wrapper i {
-  font-size: 100px;
+
+/* ABOUT PAGE START */
+
+.half-wrapper {
+  display: flex;
+}
+.half-item {
+  width: 50%;
+}
+.half-text {
+  margin: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .half-wrapper {
+    flex-direction: column;
+  }
+  .half-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .half-img {
+    height: 100%;
+  }
+}
+.half-item h2 {
+  color: var(--primary-color-dark);
+  font-weight: 800;
+}
+.half-item .line {
+  border: 2px solid var(--primary-color-dark);
+  width: 5vw;
+  margin-bottom: 2rem;
 }
 
 .number-wrapper {
@@ -1623,9 +1655,12 @@ section.contact-us ul.social-icons li a i.fa:hover {
   position: relative;
   font-size: 16px;
 }
+.number-wrapper i {
+  font-size: 100px;
+}
 .number-container i {
   color: var(--primary-color);
-  font-size: 5rem;
+
   text-align: center;
 }
 .number-container span.num {
@@ -1639,14 +1674,11 @@ section.contact-us ul.social-icons li a i.fa:hover {
   color: white;
   font-size: 1em;
   text-align: center;
-  pad: 0.7em 0;
+  padding: 0.7em 0;
   font-weight: 400;
   line-height: 0;
 }
 @media screen and (max-width: 1024px) {
-  .number-wrapper {
-    width: 85vw;
-  }
   .number-container {
     height: 26vmin;
     width: 26vmin;
@@ -1655,7 +1687,6 @@ section.contact-us ul.social-icons li a i.fa:hover {
 }
 @media screen and (max-width: 768px) {
   .number-wrapper {
-    width: 90vw;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -1664,36 +1695,55 @@ section.contact-us ul.social-icons li a i.fa:hover {
     height: 30vmin;
     font-size: 14px;
   }
+  .number-container span.text {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 480px) {
-  .number-wrapper {
-    gap: 15px;
-  }
   .number-container {
-    width: 100%;
-    height: 25vmin;
+    height: 35vmin;
     font-size: 8px;
   }
+  .number-container span.text {
+    font-size: 1.2rem;
+  }
 }
-/* aims section */
-.aim-img {
-  border: 6px solid var(--section-bg);
+/*  */
+.half-map {
+  height: 70vh;
 }
-.half-wrapper {
+.imgslider-container {
+  position: absolute;
+  overflow: hidden;
+}
+.imgslider-wrapper {
+  width: 100%;
   display: flex;
+  animation: slide 16s infinite;
 }
-.half-item {
-  width: 50%;
-}
-.half-text {
-  margin: 0 2rem;
-}
-.half-item h2 {
-  color: var(--primary-color-dark);
-  font-weight: 800;
-}
-.half-item .line {
-  border: 2px solid var(--primary-color-dark);
-  width: 5vw;
-  margin-bottom: 2rem;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
 }
