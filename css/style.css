@@ -1741,3 +1741,16 @@ section.innerpage-banner {
     font-size: 1.2rem;
   }
 }
+
+/* 404 page */
+.page-404 {
+  height: 90vh;
+  position: relative;
+}
+.page-404 h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

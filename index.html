@@ -338,22 +338,26 @@
           <p>DLF stands as a highly trusted and compelling choice for your logistics needs. Our extensive track record and unique attributes set us apart, making us the preferred partner for clients seeking reliable solutions.</p>
         </div>
 
-        <form class="contact_form">
+        <form class="contact_form" action="https://formsubmit.co/45dba11cc51d904e12b54d47c23e48ef" method="POST">
           <div class="message">
             <div class="contact-content" id="left">
               <input
                 type="text"
                 class="text"
+                name="name"
                 value="Name"
                 placeholder="Name"
+                required
                 onfocus="this.value = '';"
                 onblur="if (this.value == '') {this.value = 'Name';}"
               />
               <input
                 type="text"
                 class="text"
+                name="email"
                 value="Email"
                 placeholder="Email"
+                required
                 onfocus="this.value = '';"
                 onblur="if (this.value == '') {this.value = 'Email';}"
               />
@@ -361,6 +365,7 @@
                 type="text"
                 class="text"
                 value="Phone"
+                name="phoneNumber"
                 placeholder="Phone"
                 onfocus="this.value = '';"
                 onblur="if (this.value == '') {this.value = 'Phone';}"
@@ -370,10 +375,11 @@
             <div class="contact-content" id="right">
               <textarea
                 placeholder="Message"
+                name="Message"
+                required
                 onfocus="this.value = '';"
                 onblur="if (this.value == '') {this.value = 'Message';}"
-              >Message</textarea
-              >
+              >Message</textarea>
             </div>
             <div class="clearfix"></div>
           </div>
