@@ -38,42 +38,44 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header-nav">
-        <a href="/index.html" class="nav-logo">
-          <img class="logo-icon" src="images/logo.png" alt="DGL logo" />
-        </a>
+    <div class="page-head">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-nav">
+          <a href="/index.html" class="nav-logo">
+            <img class="logo-icon" src="images/logo.png" alt="DGL logo" />
+          </a>
 
-        <nav class="nav-wrapper">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="/about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="/services.html" class="nav-link">Services</a>
-            </li>
+          <nav class="nav-wrapper">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="/services.html" class="nav-link">Services</a>
+              </li>
 
-            <li class="nav-item">
-              <a href="/contact.html" class="nav-link nav-active">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- menu-btn header-burger -->
-        <div class="header-hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link nav-active">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- menu-btn header-burger -->
+          <div class="header-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <!-- banner section -->
+      <section class="innerpage-banner"></section>
+      <!-- /banner section -->
+    </div>
 
-    <!-- banner section -->
-    <section class="innerpage-banner"></section>
-    <!-- /banner section -->
     <section class="innerpage-intro">
       <h1 class="text-center">Contact Us</h1>
       <p>
@@ -96,28 +98,36 @@
               <p>Parramatta, NSW 2150 Australia</p>
             </div>
             <div class="contact-text">
-              <h4>Nike</h4>
+              <h4>Aloysius Lim</h4>
               <p>
-                <a>
-                  <i class="bx bxs-phone-call"></i>
-                  0400 000 000
-                </a>
+                <a href="tel:+61427699938"
+                  ><i class="fa-solid fa-phone"></i>:&nbsp;+61 427 699 938</a
+                >
               </p>
               <p>
-                <a href="mailto:email@example.com">
-                  <i class="contact-icon bx bx-envelope"></i>
-                  email@example.com
-                </a>
+                <a class="mail" href="mailto:aloysius.lim@dglgroup.com"
+                  ><i class="fa-solid fa-envelope"></i
+                  >:&nbsp;aloysius.lim@dglgroup.com</a
+                >
               </p>
             </div>
           </div>
 
           <div class="contact-text" id="contact-icons-wrapper">
             <div class="contact-icons">
-              <i class="bx bxl-linkedin-square"></i>
-              <i class="bx bxl-facebook-square"></i>
-              <i class="bx bxl-whatsapp-square"></i>
-              <i class="bx bxs-envelope"></i>
+              <i
+                class="bx bxl-linkedin-square"
+                href="https://www.linkedin.com/company/dlf-global-logistics-pty-ltd/about/"
+              ></i>
+              <i
+                class="bx bxl-facebook-square"
+                href="https://www.facebook.com/DLFGLOBAL/"
+              ></i>
+              <i class="fa-solid fa-square-phone" href="tel:+61427699938"></i>
+              <i
+                class="bx bxs-envelope"
+                href="mailto:aloysius.lim@dglgroup.com"
+              ></i>
             </div>
           </div>
         </div>
@@ -186,14 +196,24 @@
     <footer>
       <section>
         <div class="footer-info">
+          <div class="footer-list" id="footer-text">
+            <h4>DLF Global logistcis</h4>
+            <ul>
+              <li>(Part of the DGL Group Ltd)</li>
+              <li>a professional, reliable</li>
+              <li>and cost effective choice</li>
+              <li>for International Shipping</li>
+              <li>and Customs Clearance Formalities</li>
+            </ul>
+          </div>
           <div class="footer-list">
             <h4>QUICK LINKS</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/services.html">Services</a></li>
+
+              <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-list" id="footer-services">
@@ -206,40 +226,25 @@
               <li>Transport Logistics Services</li>
             </ul>
           </div>
-          <div class="footer-list" id="footer-address">
-            <h4>ADDRESS</h4>
-            <address>
-              <ul>
-                <li>Head Office(Sydney)</li>
-                <li>Level 1 Suite 2</li>
-                <li>80 George Street</li>
-                <li>NSW 2150 Australia</li>
-              </ul>
-            </address>
-          </div>
+
           <div class="footer-list" id="footer-contact">
             <h4>CONTACT</h4>
             <ul>
-              <li>Nike</li>
-              <li>Telephone : +61 2 9615 4750</li>
               <li>
-                Email :
-                <a class="mail" href="mailto:mail@example.com"
-                  >info@working.com</a
+                <i class="bx bxs-phone"></i>
+                <a href="tel:+61427699938">:&nbsp;+61 427 699 938</a>
+              </li>
+              <li>
+                <i class="bx bx-envelope"></i>
+                <a class="mail" href="mailto:aloysius.lim@dglgroup.com"
+                  >:&nbsp;aloysius.lim@dglgroup.com</a
                 >
               </li>
-              <li><img src="images/contact-scan.png" alt="" /></li>
+              <li><i class="bx bx-map"></i> <a>:&nbsp;Level 1 Suite 2 </a></li>
+              <li>&nbsp; &emsp; 80 George Street</li>
+              <li>&nbsp; &emsp; NSW 2150 Australia</li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </div>
-
-        <div class="social-icons">
-          <i class="bx bxl-linkedin-square"></i>
-          <i class="bx bxl-facebook-square"></i>
-          <i class="bx bxl-instagram-alt"></i>
-          <i class="bx bxl-whatsapp-square"></i>
-          <i class="bx bxs-envelope"></i>
         </div>
 
         <div class="copyright slideanim">
@@ -250,6 +255,10 @@
       <!-- //Footer-Ends-Here -->
     </footer>
     <!-- script -->
-    <script src="js/script-index.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eef7c3182b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

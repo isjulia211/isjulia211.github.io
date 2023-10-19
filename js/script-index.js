@@ -11,20 +11,25 @@ hamburger.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
 
-  if (scrollY > 5) {
+  if (scrollY > 1 && scrollY < 600) {
     document.querySelector("header").classList.add("header-active");
   } else {
-    document.querySelector("header").classList.remove("header-active");
+    const header = document.querySelector("header");
+    // header.classList.remove("header-active");
+
+    setTimeout(() => {
+      header.classList.remove("header-active");
+    }, 400);
   }
 
   // Scroll up button
-  const scrollUpBtn = document.querySelector(".scrollUp-btn");
+  // const scrollUpBtn = document.querySelector(".scrollUp-btn");
 
-  if (scrollY > 250) {
-    scrollUpBtn.classList.add("scrollUpBtn-active");
-  } else {
-    scrollUpBtn.classList.remove("scrollUpBtn-active");
-  }
+  // if (scrollY > 250) {
+  //   scrollUpBtn.classList.add("scrollUpBtn-active");
+  // } else {
+  //   scrollUpBtn.classList.remove("scrollUpBtn-active");
+  // }
 
   // Nav link indicator
 
