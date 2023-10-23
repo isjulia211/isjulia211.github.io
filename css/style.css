@@ -774,6 +774,9 @@ footer {
   right: 0;
   bottom: 0;
   z-index: -1;
+  background-image: url("/images/homepage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @media (min-aspect-ratio: 16/9) {

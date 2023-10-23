@@ -22,17 +22,7 @@ window.addEventListener("scroll", () => {
     }, 400);
   }
 
-  // Scroll up button
-  // const scrollUpBtn = document.querySelector(".scrollUp-btn");
-
-  // if (scrollY > 250) {
-  //   scrollUpBtn.classList.add("scrollUpBtn-active");
-  // } else {
-  //   scrollUpBtn.classList.remove("scrollUpBtn-active");
-  // }
-
   // Nav link indicator
-
   const sections = document.querySelectorAll("section[id]");
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight,
